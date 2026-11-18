@@ -1,0 +1,24 @@
+.page {
+  composes: page from '../../styles/page.css';
+}
+
+.banner {
+  composes: banner from '../../styles/banner.css';
+}
+
+.content {
+  composes: content-full from '../../styles/content.css';
+}
+
+.content ul {
+  list-style: none inside none;
+}
+
+.content li {
+  margin: 2em 0;
+}
+
+.content p {
+  color: var(--color-text);
+  font-weight: 300;
+}
