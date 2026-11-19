@@ -15,7 +15,7 @@ const HomePage = () => {
             {'chora'}
           </h1>
           <p>
-            <i>{'a third thing or perhaps no thing'}</i>
+            <i>{'a third thing... or perhaps nothing'}</i>
           </p>
           <p>{'open protocol'}</p>
         </div>

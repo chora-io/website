@@ -21,6 +21,17 @@ const Layout = ({ children }: any) => (
                 title: 'artifacts',
                 target: '',
               },
+              'divider',
+              {
+                link: 'https://git.chora.io',
+                title: 'git',
+                target: '_blank',
+              },
+              {
+                link: '/artifacts/feed',
+                title: 'rss',
+                target: '_blank',
+              }
             ]}
             showMenuButton={true}
             showMobileTitle={true}

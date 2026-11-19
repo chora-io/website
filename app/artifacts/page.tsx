@@ -9,14 +9,14 @@ export const metadata: Metadata = {
   title: 'chora | artifacts',
 }
 
-async function getResearchArtifacts() {
+async function getAllArtifacts() {
   return [
     { group: 'choreography', items: getArtifacts('choreography') },
   ]
 }
 
 const ResearchPage = async () => {
-  const artifacts = await getResearchArtifacts()
+  const artifacts = await getAllArtifacts()
   return (
     <div className={styles.page}>
       <div className={styles.banner}>
