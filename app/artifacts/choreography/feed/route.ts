@@ -18,7 +18,7 @@ export async function GET() {
     id: SITE_URL,
     link: SITE_URL,
     language: "en",
-    feedLinks: { rss2: `${SITE_URL}/feed.xml` },
+    feedLinks: { rss2: `${SITE_URL}/feed` },
     ttl: 60,
   });
 
