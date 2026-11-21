@@ -12,8 +12,8 @@ function getAllArtifacts() {
 
 export function buildFeed() {
   const feed = new Feed({
-    title: "Chora's Feed",
-    description: "Chora's Feed",
+    title: "Chora",
+    description: "Chora",
     id: SITE_URL,
     link: SITE_URL,
     language: "en",
@@ -31,8 +31,8 @@ export function buildFeed() {
   for (const a of getAllArtifacts()) {
     feed.addItem({
       title: a.title,
-      id: `${SITE_URL}/${a.category}/${a.id}`,
-      link: `${SITE_URL}/${a.category}/${a.id}`,
+      id: `${SITE_URL}/artifacts/${a.category}/${a.id}`,
+      link: `${SITE_URL}/artifacts/${a.category}/${a.id}`,
       description: a.description,
       date: a.updated,
       published: a.created,

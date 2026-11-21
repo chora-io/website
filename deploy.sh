@@ -12,20 +12,17 @@ bun run build
 # change to build directory
 cd dist
 
-# create .nojekyll file
-touch .nojekyll
-
 # git init
 git init
 
 # git remote (required for .gitconfig)
-git remote add origin git@github.com:chora-io/website.git
+git remote add origin git@codeberg.org:chora-io/website.git
 
 # git commit
 git add -A
 git commit -m 'publish'
 
-# push to gh-pages branch
-git push origin main:gh-pages -f
+# push to pages branch
+git push origin main:pages -f
 
 cd -
