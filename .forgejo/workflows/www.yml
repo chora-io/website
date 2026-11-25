@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  build:
+    runs-on: native
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: submod
+        run: |
+            git submodule init
+            git submodule update
+      - name: install
+        run: bun install
+      - name: build
+        run: bun run build
+      - name: deploy
+        run: |
+            rm -rf /srv/www/*
+            cp -r dist/. /srv/www/
